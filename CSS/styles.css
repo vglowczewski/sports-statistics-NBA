@@ -1,0 +1,28 @@
+.table-container {
+    display: block;
+  }
+  
+/* Hide table when the 'hidden' class is applied */
+.table-container.hidden {
+    display: none;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.button{
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px; /* Adjust the padding for smaller screens */
+  }
+}
+

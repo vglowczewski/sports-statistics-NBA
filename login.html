@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</head>
+<body>
+         <!--Navbar-->
+     <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="home.html">
+            <img src="./Images/NBA-logo.png" width="90" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="scores.html">
+              Scores
+            </a>
+      
+            <a class="navbar-item" href="standings.html">
+              Standings
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-info" href="signup.html">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" href="login.html">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+          <!--Get user input-->
+    <section class="section">
+        <div class="container">
+        <h1 class="title">Log In</h1>
+        <div class="container">
+          <!--Username-->
+          <div class="field">
+            <label class="label">Username</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Username">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help"></p>
+          </div>
+          
+          <!--Email-->
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </div>
+          </div>
+          
+          <!--Password-->
+          <div class="field">
+            <label for="" class="label">Password</label>
+            <div class="control has-icons-left">
+              <input type="password" placeholder="*******" class="input" required>
+              <span class="icon is-small is-left">
+                <i class="fa fa-lock"></i>
+              </span>
+            </div>
+          </div>
+  
+          <!--Remember Me-->
+          <div class="field">
+            <label for="" class="checkbox">
+              <input type="checkbox">
+             Remember Me
+            </label>
+          </div>
+          
+          <!--Submit button-->
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-info">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--Footer-->
+       <footer class="footer">
+            <div class="content has-text-centered">
+                <p><strong>National Basketball Association</strong></p>
+                <div class="is-flex is-justify-content-center">
+                <a href="https://twitter.com/NBA/" class="icon is-large mr-3">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/nba/" class="icon is-large mr-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/nba/" class="icon is-large">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

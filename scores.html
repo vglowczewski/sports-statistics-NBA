@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <title>Scores</title>
+</head>
+<body>
+     <!--Navbar-->
+     <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="home.html">
+            <img src="./Images/NBA-logo.png" width="90" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="scores.html">
+              Scores
+            </a>
+      
+            <a class="navbar-item" href="standings.html">
+              Standings
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-info" href="signup.html">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" href="login.html">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1 class="title mt-5 pt-4">NBA Game Scores</h1>
+        <div class="mt-5 pt-4"></div>
+        
+        <!-- Form to collect game scores -->
+        <form id="scoreForm">
+          <h1 class="subtitle is-4">Input Scores</h1>
+          <div class="columns">
+              <!--Get Team1 Name-->
+              <div class="column is-one-fifth">
+                  <div class="field">
+                      <label class="label" for="team1">Team 1:</label>
+                      <div class="control">
+                        <div class="select is-fullwidth">
+                          <select id="team1" required>
+                              <option value="Celtics">Celtics</option>
+                              <option value="Magic">Magic</option>
+                              <option value="Bucks">Bucks</option>
+                              <option value="76ers">76ers</option>
+                              <option value="Heat">Heat</option>
+                              <option value="Knicks">Knicks</option>
+                              <option value="Pacers">Pacers</option>
+                              <option value="Cavaliers">Cavaliers</option>
+                              <option value="Hawks">Hawks</option>
+                              <option value="Raptors">Raptors</option>
+                              <option value="Timberwolves">Timberwolves</option>
+                              <option value="Thunder">Thunder</option>
+                              <option value="Mavericks">Mavericks</option>
+                              <option value="Suns">Suns</option>
+                              <option value="Nuggets">Nuggets</option>
+                              <option value="Warriors">Warriors</option>
+                              <option value="Lakers">Lakers</option>
+                              <option value="Pelicans">Pelicans</option>
+                              <option value="Clippers">Clippers</option>
+                              <option value="Grizzlies">Grizzlies</option>
+                        </select>
+                      </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Get Team1 Score-->
+              <div class="column is-one-fifth">
+                  <div class="field">
+                      <label class="label" for="team1Score">Score:</label>
+                      <div class="control">
+                          <input class="input" type="number" id="team1Score" required>
+                      </div>
+                  </div>
+              </div>
+              <!--Get Team2 Name-->
+              <div class="column is-one-fifth">
+                  <div class="field">
+                      <label class="label" for="team2">Team 2:</label>
+                      <div class="control">
+                          <div class="select is-fullwidth">
+                            <select id="team2" required>
+                              <option value="Celtics">Celtics</option>
+                              <option value="Magic">Magic</option>
+                              <option value="Bucks">Bucks</option>
+                              <option value="76ers">76ers</option>
+                              <option value="Heat">Heat</option>
+                              <option value="Knicks">Knicks</option>
+                              <option value="Pacers">Pacers</option>
+                              <option value="Cavaliers">Cavaliers</option>
+                              <option value="Hawks">Hawks</option>
+                              <option value="Raptors">Raptors</option>
+                              <option value="Timberwolves">Timberwolves</option>
+                              <option value="Thunder">Thunder</option>
+                              <option value="Mavericks">Mavericks</option>
+                              <option value="Suns">Suns</option>
+                              <option value="Nuggets">Nuggets</option>
+                              <option value="Warriors">Warriors</option>
+                              <option value="Lakers">Lakers</option>
+                              <option value="Pelicans">Pelicans</option>
+                              <option value="Clippers">Clippers</option>
+                              <option value="Grizzlies">Grizzlies</option>
+                        </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Get Team2 Score-->
+              <div class="column is-one-fifth">
+                  <div class="field">
+                      <label class="label" for="team2Score">Score:</label>
+                      <div class="control">
+                          <input class="input" type="number" id="team2Score" required>
+                      </div>
+                  </div>
+              </div>
+              <!--Get Game Date-->
+              <div class="column is-one-fifth">
+                <div class="field">
+                  <label class="label" for="datepicker">Select Date:</label>
+                    <div class="control">
+                      <input class="input" type="date" id="datepicker" required>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column is-one-fifth">
+            <button class="button is-info is-fullwidth" type="submit">Add Score</button>
+            </div>
+          </div>
+      </form>
+    
+        <!-- Additional date fields for filtering -->
+        <div class="mt-5 pt-4"></div>
+        <h2 class="subtitle is-4">Filter by Date</h2>
+        <!--Get start date-->
+        <div class="columns">
+          <div class="column is-one-fifth">
+              <div class="field">
+                <label class="label" for="startDate">Start Date:</label>
+                <div class="control">
+                  <input class="input" type="date" id="startDate" required>
+                </div>
+                  </div>
+              </div>
+          <!--Get end date-->
+          <div class="column is-one-fifth">
+            <div class="field">
+              <label class="label" for="endDate">End Date:</label>
+              <div class="control">
+                <input class="input" type="date" id="endDate" required>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!--Buttons to filter by date and reset filter-->
+      <div class="columns">
+        <div class="column is-one-third">
+          <button id="filterDateBtn" class = "button is-info">Filter Date</button>
+          <button id="resetDateBtn" class = "button is-bold">Reset Dates</button>
+        </div>
+      </div>
+    
+        <!-- Display the cards of saved game scores -->
+        <div class="mt-5 pt-4"></div>
+        <h2 class="subtitle is-4">Games</h2>
+        <section id="gameCards" class="columns is-multiline card-container mt-5 mb-5">
+          <!--Game cards added dynamically-->         
+        </section>
+        <!--Pagination-->
+        <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+          <a id="previousPage" class="pagination-previous">Previous</a>
+          <a id="nextPage" class="pagination-next">Next page</a>
+          <ul id="pagination" class="pagination-list">
+          </ul>
+        </nav>
+        <div class="mt-5 pt-4"></div>
+      </div>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="content has-text-centered">
+            <p><strong>National Basketball Association</strong></p>
+            <div class="is-flex is-justify-content-center">
+                <a href="https://twitter.com/NBA/" class="icon is-large mr-3">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/nba/" class="icon is-large mr-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/nba/" class="icon is-large">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="JS/scores.js"></script>
+</html>

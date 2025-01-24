@@ -1,0 +1,171 @@
+[
+    {
+        "team1": "76ers",
+        "team1Score": 88,
+        "team2": "Heat",
+        "team2Score": 90,
+        "date": "2023-11-15"
+    },
+    {
+        "team1": "Mavericks",
+        "team1Score": 56,
+        "team2": "Timberwolves",
+        "team2Score": 70,
+        "date": "2023-11-18"
+    },
+    {
+        "team1": "Suns",
+        "team1Score": 45,
+        "team2": "Heat",
+        "team2Score": 80,
+        "date": "2023-11-14"
+    },
+    {
+        "team1": "Celtics",
+        "team1Score": 112,
+        "team2": "Magic",
+        "team2Score": 106,
+        "date": "2023-11-15"
+    },
+    {
+        "team1": "Bucks",
+        "team1Score": 119,
+        "team2": "Pacers",
+        "team2Score": 115,
+        "date": "2023-11-17"
+    },
+    {
+        "team1": "Heat",
+        "team1Score": 98,
+        "team2": "Knicks",
+        "team2Score": 92,
+        "date": "2023-11-18"
+    },
+    {
+        "team1": "Pacers",
+        "team1Score": 105,
+        "team2": "Cavaliers",
+        "team2Score": 99,
+        "date": "2023-11-20"
+    },
+    {
+        "team1": "Hawks",
+        "team1Score": 110,
+        "team2": "Raptors",
+        "team2Score": 108,
+        "date": "2023-11-20"
+    },
+    {
+        "team1": "Timberwolves",
+        "team1Score": 117,
+        "team2": "Thunder",
+        "team2Score": 113,
+        "date": "2023-11-22"
+    },
+    {
+        "team1": "Nuggets",
+        "team1Score": 112,
+        "team2": "Warriors",
+        "team2Score": 115,
+        "date": "2023-11-23"
+    },
+    {
+        "team1": "Pelicans",
+        "team1Score": 120,
+        "team2": "Lakers",
+        "team2Score": 114,
+        "date": "2023-11-23"
+    },
+    {
+        "team1": "Clippers",
+        "team1Score": 112,
+        "team2": "Grizzlies",
+        "team2Score": 106,
+        "date": "2023-11-23"
+    },
+    {
+        "team1": "Warriors",
+        "team1Score": 104,
+        "team2": "Raptors",
+        "team2Score": 115,
+        "date": "2023-11-24"
+    },
+    {
+        "team1": "Thunder",
+        "team1Score": 88,
+        "team2": "Clippers",
+        "team2Score": 80,
+        "date": "2023-11-27"
+    },
+    {
+        "team1": "Bucks",
+        "team1Score": 88,
+        "team2": "Celtics",
+        "team2Score": 80,
+        "date": "2023-11-27"
+    },
+    {
+        "team1": "Pelicans",
+        "team1Score": 120,
+        "team2": "Hawks",
+        "team2Score": 118,
+        "date": "2023-11-28"
+    },
+    {
+        "team1": "Nuggets",
+        "team1Score": 111,
+        "team2": "Lakers",
+        "team2Score": 110,
+        "date": "2023-11-27"
+    },
+    {
+        "team1": "Grizzlies",
+        "team1Score": 108,
+        "team2": "Warriors",
+        "team2Score": 90,
+        "date": "2023-11-09"
+    },
+    {
+        "team1": "76ers",
+        "team1Score": 104,
+        "team2": "Raptors",
+        "team2Score": 108,
+        "date": "2023-11-15"
+    },
+    {
+        "team1": "Pacers",
+        "team1Score": 98,
+        "team2": "Celtics",
+        "team2Score": 97,
+        "date": "2023-11-10"
+    },
+    {
+        "team1": "Hawks",
+        "team1Score": 123,
+        "team2": "Cavaliers",
+        "team2Score": 112,
+        "date": "2023-11-17"
+    },
+    {
+        "team1": "Thunder",
+        "team1Score": 110,
+        "team2": "Suns",
+        "team2Score": 113,
+        "date": "2023-11-02"
+    },
+    {
+        "team1": "Pelicans",
+        "team1Score": 67,
+        "team2": "Thunder",
+        "team2Score": 99,
+        "date": "2023-11-19"
+    },
+    {
+        "team1": "Pacers",
+        "team1Score": 88,
+        "team2": "Magic",
+        "team2Score": 85,
+        "date": "2023-11-08"
+    }
+]
+   

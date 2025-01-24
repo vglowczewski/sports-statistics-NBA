@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Standings</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="home.html">
+            <img src="./Images/NBA-logo.png" width="90" height="28">
+          </a>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="scores.html">
+              Scores
+            </a>
+      
+            <a class="navbar-item" href="standings.html">
+              Standings
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-info" href="signup.html">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" href="login.html">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <!--Content-->
+    <div class="container">
+    <h1 class="title mt-5 mb-5 pt-4">NBA Game Standings</h1>
+    
+    <!--League and Division buttons-->
+    <button id="league" class = "button is-info mt-2">League</button>
+    <button id="division" class = "button mt-2">Division</button>
+
+    <!--League Table-->
+    <div id="leagueTableContainer" class="table-container">
+        <div class="pt-4"></div>
+        <h2 class="subtitle is-4">League Standings</h2>
+        <table id="leagueStandings" class="table is-fullwidth">
+            <thead>
+                <tr>
+                    <th id="ranking">Ranking</th>
+                    <th id="teamName">Team Name</th>
+                    <th id="wins" sorted-order="desc">Wins</th>
+                    <th id="losses" sorted-order="asc">Losses</th>
+                    <th id="wPercentage" sorted-order="desc">Win %</th>
+                    <th id="played">Games Played</th>
+                    <th id="division" sorted-order="">Division</th>
+                </tr>
+            </thead>
+            <tbody id="standingsBody">
+                <!-- Table body content goes here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!--West Table-->
+    <div id="westTableContainer" class="table-container hidden">
+        <div class="pt-4"></div>
+        <h2 class="subtitle is-4">West Standings</h2>
+        <table id="westStandings" class="table is-fullwidth">
+            <thead>
+                <tr>
+                    <th id="rankingWest">Ranking</th>
+                    <th id="teamNameWest">Team Name</th>
+                    <th id="winsWest" sorted-order="desc">Wins</th>
+                    <th id="lossesWest" sorted-order="asc">Losses</th>
+                    <th id="wPercentageWest" sorted-order="desc">Win %</th>
+                    <th id="playedWest">Games Played</th>
+                    <th id="divisionWest" sorted-order="">Division</th>
+                </tr>
+            </thead>
+            <tbody id="westStandingsBody">
+                <!-- Table body content goes here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!--East Table-->
+    <div id="eastTableContainer" class="table-container hidden">
+        <div class="pt-4"></div>
+        <h2 class="subtitle is-4">East Standings</h2>
+        <table id="eastStandings" class="table is-fullwidth">
+            <thead>
+                <tr>
+                    <th id="rankingEast">Ranking</th>
+                    <th id="teamNameEast">Team Name</th>
+                    <th id="winsEast" sorted-order="desc">Wins</th>
+                    <th id="lossesEast" sorted-order="asc">Losses</th>
+                    <th id="wPercentageEast" sorted-order="desc">Win %</th>
+                    <th id="playedEast">Games Played</th>
+                    <th id="divisionEast" sorted-order="">Division</th>
+                </tr>
+            </thead>
+            <tbody id="eastStandingsBody">
+                <!-- Table body content goes here -->
+            </tbody>
+        </table>
+    </div>
+    <div class="mt-2 pt-4"></div>
+    
+    <!--Footer-->
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p><strong>National Basketball Association</strong></p>
+            <div class="is-flex is-justify-content-center">
+                <a href="https://twitter.com/NBA/" class="icon is-large mr-3">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/nba/" class="icon is-large mr-3">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/nba/" class="icon is-large">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="JS/standings.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Team</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="home.html">
+            <img src="./Images/NBA-logo.png" width="90" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="scores.html">
+              Scores
+            </a>
+      
+            <a class="navbar-item" href="standings.html">
+              Standings
+            </a>
+      
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="about.html">
+                  About
+                </a>
+                <a class="navbar-item" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-info" href="signup.html">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light" href="login.html">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container">
+      <h2 id="teamName" class="title" style="margin: 30px;"></h2>
+        <section class="mg-large" style="margin: 30px;">
+            <section id="gameCards" class="is-flex is-flex-direction-column">
+                <!-- Game cards will be added here -->
+            </section>
+        </section>
+    </div>
+
+<script src="JS/team.js"></script>
+</body>
+</html>
